@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css">
+    <title>Форма</title>
+</head>
+
+<body>
+
+    <div class="choose">
+        <button onclick="choosePackage(0)">1</button>
+        <button onclick="choosePackage(1)">2</button>
+        <button onclick="choosePackage(2)">3</button>
+    </div>
+    <div class="modal__window">
+        <div class="modal__content">
+            <div class="modal__header">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Оформление заказа</h2>
+            </div>
+            <div class="modal__body">
+                <form action="#" method="#" class="order">
+                    <div class="field">
+                        <label for="fullName">Введите Ваше полное имя</label>
+                        <input type="text" name="fullName">
+                    </div>
+                    <div class="field">
+                        <label for="email">Введите Вашу почту</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Введите Ваш номер телефона</label>
+                        <input type="text" name="phone">
+                    </div>
+                    <div class="field">
+                        <label for="town">Введите Ваш город</label>
+                        <input type="text" name="town">
+                    </div>
+                    <div class="field">
+                        <label for="rules"> Я принимаю <a href="#">правила пользовательского соглашения</a></label>
+                        <input type="checkbox" name="rules" checked>
+                    </div>
+                    <div class="field hidden">
+                        <input type="text" name="package" class="package">
+                    </div>
+                    <input type="submit" value="Купить">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
